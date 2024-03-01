@@ -1,0 +1,88 @@
+<!doctype html>
+<html data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day-93(H.W-2)</title>
+  <link href="./output.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class=" ">
+
+
+  <h1 class="font-extrabold text-center text-[100px] text-[aqua]  ">Choose Shape</h1>
+
+
+  <div class="px-20 pt-24 flex gap-10 justify-between items-center flex-col lg:flex-row">
+
+    <div id="round" 
+      class="rounded-full bg-[rgb(0,255,255)] h-[200px] w-[200px] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:ring-8 hover:ring-white">
+    </div>
+
+    <div id="square" 
+      class=" bg-[aqua] h-[170px] w-[172px] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:ring-8 hover:ring-white">
+    </div>
+
+    <div id="rectangle" 
+      class=" bg-[aqua] h-[170px] w-[300px] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:ring-8 hover:ring-white">
+    </div>
+
+    <div id="triangle" 
+      class="  h-[168px] w-[240px] transition ease-in-out delay-150  hover:-translate-y-3 hover:scale-110 duration-300 ">
+      <img src="./95433279961.png" alt=""></div>
+
+  </div>
+
+
+  <section class="flex flex-col justify-center items-center">
+
+    <div class="pt-10 hidden" id="circleDiv">
+      <label class="text-[aqua] text-xl font-medium pr-2" for="radiusInp">Radius :</label>
+      <input class="h-10 w-52 text-center text-xl font-medium text-[aqua]" type="number" name="radius" id="radiusInp">
+    </div>
+    
+    <div class="pt-10 hidden" id="squareDiv">
+      <label class="text-[aqua] text-xl font-medium pr-2" for="squareInp">Lenght :</label>
+      <input class="h-10 w-52 text-center text-xl font-medium text-[aqua]" type="number" name="square" id="squareInp">
+    </div>
+
+    <div class="pt-10 hidden" id="rectangleDiv">
+      <label class="text-[aqua] text-xl font-medium pr-2" for="rectangleInp">Lenght :</label>
+      <input class="h-10 w-52 text-center text-xl font-medium text-[aqua]" type="number" name="rectangle" id="rectangleInp">
+      <br>
+      <label class="mt-3 text-[aqua] text-xl font-medium pr-2" for="rectangleInp2">Width :</label>
+      <input class="ml-2 mt-3  h-10 w-52 text-center text-xl font-medium text-[aqua]" type="number" name="rectangle2" id="rectangleInp2">
+    </div>
+
+    <div class="pt-10 hidden" id="triangleDiv">
+      <label class="text-[aqua] text-xl font-medium pr-2" for="triangleInp">Height :</label>
+      <input class="h-10 w-52 text-center text-xl font-medium text-[aqua]" type="number" name="rectangle" id="triangleInp">
+      <br>
+      <label class="mt-3 text-[aqua] text-xl font-medium pr-2" for="triangleInp2">Base :</label>
+      <input class="ml-5 mt-3  h-10 w-52 text-center text-xl font-medium text-[aqua]" type="number" name="triangle2" id="triangleInp2">
+    </div>
+   
+
+<div id="btnDiv" class=" flex justify-center items-center py-16">
+  <button class=" px-40 py-4 bg-black text-[aqua] text-2xl font-bold border-[aqua] border-2 rounded-lg  "><span id="shapeName">Click any Shape</span></button>
+</div>
+<div id="btnDiv2" class="hidden justify-center items-center py-16">
+  <button class=" px-40 py-4 bg-black text-[aqua] text-2xl font-bold border-[aqua] border-2 rounded-lg  "><span id="shapeName2">Calculate</span></button>
+</div>
+
+
+
+
+</section>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
